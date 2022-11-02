@@ -14,7 +14,9 @@
 body {
   background-color: antiquewhite;
 }
-nav {border: 2px solid chocolate;}
+nav {
+  border: 2px solid chocolate;
+}
 .home {
   display: grid;
 }
@@ -23,18 +25,17 @@ nav {border: 2px solid chocolate;}
   justify-content: center;
   justify-content: space-around;
 }
-@media screen and (min-width:600px) {
+@media screen and (min-width: 600px) {
   .home {
-    grid-template-columns: 1fr 2fr;
-    gap: 15px
-    ;
+    grid-template-columns: 1fr 3fr;
+    gap: 15px;
   }
   .menu {
     flex-direction: column;
     grid-column: 1/2;
     align-items: center;
   }
- .section {
-  grid-column: 2/3;
- }
+  .section {
+    grid-column: 2/3;
+  }
 }
