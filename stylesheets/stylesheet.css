@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: blue;
 }
 @media screen and (min-width: 480px) {
@@ -10,4 +10,31 @@ body {
   body {
     background-color: green;
   }
+} */
+body {
+  background-color: antiquewhite;
+}
+nav {border: 2px solid chocolate;}
+.home {
+  display: grid;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+@media screen and (min-width:600px) {
+  .home {
+    grid-template-columns: 1fr 2fr;
+    gap: 15px
+    ;
+  }
+  .menu {
+    flex-direction: column;
+    grid-column: 1/2;
+    align-items: center;
+  }
+ .section {
+  grid-column: 2/3;
+ }
 }
